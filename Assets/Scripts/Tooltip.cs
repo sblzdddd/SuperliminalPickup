@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class Tooltip : MonoBehaviour
 {
@@ -44,7 +44,7 @@ public class Tooltip : MonoBehaviour
                             OutLine.OutlineColor = sp.pointedColor;
                             OutLine.enabled = true;
                         }
-                        tooptipText.GetComponent<TextMeshProUGUI>().text = sp.objectName;
+                        tooptipText.GetComponent<Text>().text = sp.objectName;
                         tooptipText.GetComponent<CanvasGroup>().alpha = 1;
                         cursorDefault.GetComponent<CanvasGroup>().alpha = 0;
                         cursorHand.GetComponent<CanvasGroup>().alpha = 1;
